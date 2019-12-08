@@ -4,12 +4,415 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homeworks Java Script</title>
-    <link rel="stylesheet" href="style/style.css">
+    <title>ОреховАгроПром</title>
+    <script src="https://kit.fontawesome.com/0f6dda309a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bxslider/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    
 </head>
 <body>
-    <h1>Hello world!</h1>
 
-    <script src="js/app.js"></script>
+<div class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="phones">
+                <ul>
+                    <li><p>Пн-Пт: 08:00 - 18:00</p></li>
+                    <li><a href="tel:+380500200901">+38 (050) 020 09 01</a></li>
+                    <li><a href="tel:+380963997946">+38 (096) 399 79 46</a></li>
+                </ul>
+            </div>
+            <div class="social-networks">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube-square"></i></a>
+            </div>
+            <div class="logo">
+                <img src="img/logo_text.png" alt="logotext">
+            </div>
+            <div class="search">
+                <a href="#"><i class="fas fa-search"></i><br>Поиск</a>
+            </div>
+            <div class="cart">
+                <a href="#"><i class="fas fa-shopping-cart"></i><br>Корзина</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header-menu">
+    <div class="container">
+        <ul>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="navbar">
+    <div class="container">
+        <button type="button" class="collapsible"><span></span></button>
+        <div class="navbarContent">   
+            <ul>
+                <li><a href="#"><img class="navImg" src="img/pricep.png" alt="pricep"><span>Тракторные прицепы</span></a></li>
+                <li><a href="#"><img class="navImg" src="img/z-met.png" alt="zmet"><span>Зерно-метатели</span></a></li>
+                <li><a href="#"><img class="navImg" src="img/navesnoe.png" alt="navesnoe"><span>Навесное оборудование</span></a></li>
+                <li><a href="#"><img class="navImg" src="img/OVS.png" alt="ovs"><span>ОВС</span></a></li>
+                <li><a href="#"><img class="navImg" src="img/rem.png" alt="remont"><span>Услуги ремонта</span></a></li>
+                <li><a href="#"><img class="navImg" src="img/zapch.png" alt="zapcasti"><span>Запчасти</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="header-sldr">
+    <div class="container">
+        <div class="header-slider">
+            <div class="slide">
+                <div class="content">
+                    <div class="info">
+                        <h2>Зернометатели <span class="colorgreen">от 92000 грн.</span></h2>
+                        <p>Надежный помощник по разумной цене</p>
+                        <ul>
+                            <li>Всегда в наличии</li>
+                            <li>Гарантия 12 мес.</li>
+                        </ul>
+                    </div>
+                    <button>ПОДРОБНЕЕ</button>
+                </div> 
+                <div class="image">
+                    <img src="img/zm-slide.png" alt="zm-slide">
+                </div>
+            </div> 
+            <div class="slide">
+                <div class="content">
+                    <div class="info">
+                        <h2>Зернометатели <span class="colorgreen">от 92000 грн.</span></h2>
+                        <p>Надежный помощник по разумной цене</p>
+                        <ul>
+                            <li>Всегда в наличии</li>
+                            <li>Гарантия 12 мес.</li>
+                        </ul>
+                    </div>
+                    <button>ПОДРОБНЕЕ</button>
+                </div> 
+                <div class="image">
+                    <img src="img/zm-slide.png" alt="zm-slide">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <div class="info">
+                        <h2>Зернометатели <span class="colorgreen">от 92000 грн.</span></h2>
+                        <p>Надежный помощник по разумной цене</p>
+                        <ul>
+                            <li>Всегда в наличии</li>
+                            <li>Гарантия 12 мес.</li>
+                        </ul>
+                    </div>
+                    <button>ПОДРОБНЕЕ</button>
+                    </div> 
+                <div class="image">
+                    <img src="img/zm-slide.png" alt="zm-slide">
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<div class="products">
+    <div class="container">
+        <h3>Популярные товары</h3>
+        <div class="products-content">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/product1.png" alt="product1">
+                </div>
+                <div class="product-label">
+                    <p>Тракторный прицеп КТУ-10</p>
+                </div>
+                <div class="product-price">
+                    <p><b>160 000 грн.</b></p>
+                </div>
+                <button>В корзину</button>
+            </div>
+            <div class="product-card">
+            <div class="product-image">
+                    <img src="img/product2.png" alt="product2">
+                </div>
+                <div class="product-label">
+                    <p>Зернометатель ЗМ-100</p>
+                </div>
+                <div class="product-price">
+                    <p><b>120 000 грн.</b></p>
+                </div>
+                <button>В корзину</button>
+            </div>     
+            <div class="product-card">     
+            <div class="product-image">
+                    <img src="img/product3.png" alt="product3">
+                </div>
+                <div class="product-label">
+                    <p>Очиститель вороха самопередвижной ОВС-25</p>
+                </div>
+                <div class="product-price">
+                    <p><b>140 000 грн.</b></p>
+                </div>
+                <button>В корзину</button>
+            </div>
+            <div class="product-card">
+            <div class="product-image">
+                    <img src="img/product4.png" alt="product4">
+                </div>
+                <div class="product-label">
+                    <p>Тракторный прицеп 2-ПТС-4</p>
+                </div>
+                <div class="product-price">
+                    <p><b>150 000 грн.</b></p>
+                </div>
+                <button>В корзину</button>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<div class="advantages">
+    <div class="container">
+        <h3>Наши приемущества</h3>
+        <div class="adv-content">
+            <div>
+                <p>Наличие запасных<br>частей на складе</p>
+                <img src="img/fig1.png" alt="fig1">
+            </div>
+            <div>
+                <p>Быстрая отгрузка<br>и бесплатная доставка</p>
+                <img src="img/fig2.png" alt="fig2">
+            </div>
+            <div>
+                <p>Гарантия и сервисное<br>обслуживание</p>
+                <img src="img/fig3.png" alt="fig3">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about">
+    <div class="container">
+        <h3>О компании</h3>
+        <div class="about-content">
+            <div>
+                <img src="img/happy-man.png" alt="happy-man">
+            </div>
+            <div>
+                <p>"Ореховагропром" - производственное предприятие сельскохозяйственного машиностроения.</p>
+                <p>Мы на рынке более 10 лет работаем с аграриями и для них.</p>
+                <p>Мы производим более 60 моделей сельскохозяйственной техники и более 2600 запчастей для нее.</p>
+                <p>Доставляем свою продукцию по всей Украине, а в 22 областях работают наши региональные представители.</p>
+            </div>
+        </div>
+        <div class="about-figures">
+            <div>
+               <p><span class="figures"><b>5 лет</b></span></p>
+               <p>успешной работы на украинском рынке</p> 
+            </div>
+            <div>
+                <p><span class="figures"><b>3 123</b></span></p>
+                <p>единицы техники выпущено с момента основания</p> 
+            </div>
+            <div>
+                <p><span class="figures"><b>60</b></span></p>
+                <p>довольных благодарных клиентов</p> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="reviews">
+    <div class="container">
+        <div class="reviews-slider">
+            <div class="slide">
+                <div class="review">
+                    <p>"Знаю этих ребят, являются дилерами нашей продукции. 
+                        Очень ответственные и компетентные в своем деле.
+                        Можете смело сотрудничать, Вас не подведут</p>
+                </div>
+                <div class="client">
+                    <div class="circle">
+                        <img src="img/avatar.png" alt="avatar">
+                    </div>
+                    <div>
+                    <p><span class="client-name">Фамилия Имя</span></p>
+                    <p>Благодарный клиент</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="review">
+                    <p>"Знаю этих ребят, являются дилерами нашей продукции. 
+                        Очень ответственные и компетентные в своем деле.
+                        Можете смело сотрудничать, Вас не подведут</p>
+                    </div>
+                    <div class="client">
+                    <div class="circle">
+                    <img src="img/avatar.png" alt="avatar">
+                    </div>
+                    <div>
+                    <p><span class="client-name">Фамилия Имя</span></p>
+                    <p>Благодарный клиент</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="review">
+                    <p>"Знаю этих ребят, являются дилерами нашей продукции. 
+                        Очень ответственные и компетентные в своем деле.
+                        Можете смело сотрудничать, Вас не подведут</p>
+                </div>
+                <div class="client">
+                    <div class="circle">
+                    <img src="img/avatar.png" alt="avatar">
+                    </div>
+                    <div>
+                    <p><span class="client-name">Фамилия Имя</span></p>
+                    <p>Благодарный клиент</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="news">
+    <div class="container">
+        <h3>Новости</h3>
+        <div class="news-content">
+            <div class="news-card">
+                <div class="news-img">
+                    <img src="img/news1.png" alt="news1">
+                </div>
+                <div class="news-text">
+                    <span class="news-date">14.11.2019</span>
+                    <h4>Новое оборудование - новые возможности</h4>
+                    <p>В начале этого года на нашем предприятии 
+                        введен полный комплекс инновационного оборудования</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-img">
+                    <img src="img/news2.png" alt="news2">
+                </div>
+                <div class="news-text">
+                    <span class="news-date">01.11.2019</span>
+                    <h4>Новые станки - новые возможности</h4>
+                    <p>В начале этого года на нашем предприятии 
+                        введен полный комплекс инновационного оборудования</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-img">
+                    <img src="img/news3.png" alt="news3">
+                </div>
+                <div class="news-text">
+                    <span class="news-date">25.10.2019</span>
+                    <h4>НовАя Техника - новые возможности</h4>
+                    <p>В начале этого года на нашем предприятии 
+                        введен полный комплекс инновационного оборудования</p>
+                </div>
+            </div>
+        </div>
+        <!-- hidden checkbox -->
+        <input class="hide" id="hd-1" type="checkbox">
+        <label for="hd-1">Смотреть дальше <img src="img/read-more.png" alt="read-more"></label>
+        <div class="news-content">
+            <div class="news-card">
+                <div class="news-img">
+                    <img src="img/product2.png" alt="news1">
+                </div>
+                <div class="news-text">
+                    <span class="news-date">14.11.2019</span>
+                    <h4>Новое оборудование - новые возможности</h4>
+                    <p>В начале этого года на нашем предприятии 
+                        введен полный комплекс инновационного оборудования</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-img">
+                    <img src="img/product3.png" alt="news2">
+                </div>
+                <div class="news-text">
+                    <span class="news-date">01.11.2019</span>
+                    <h4>Новые станки - новые возможности</h4>
+                    <p>В начале этого года на нашем предприятии 
+                        введен полный комплекс инновационного оборудования</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-img">
+                    <img src="img/zm-slide.png" alt="news3">
+                </div>
+                <div class="news-text">
+                    <span class="news-date">25.10.2019</span>
+                    <h4>НовАя Техника - новые возможности</h4>
+                    <p>В начале этого года на нашем предприятии 
+                        введен полный комплекс инновационного оборудования</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="footer-content">
+        <div>
+            <img src="img/logo-white.png" alt="logo">
+            <p>"Ореховагропром" - производственное предприятие сельскохозяйственного машиностроения.
+            Мы на рынке более 10 лет работаем с аграриями и для них.
+            Мы производим более 60 моделей сельскохозяйственной техники и более 2600 запчастей для нее.</p>
+        </div>
+        <div>
+            <h5>Продукция</h5>
+            <ul>
+                <li>Тракторные прицепы</li>
+                <li>Зернометатели</li>
+                <li>Навесное оборудование</li>
+                <li>ОВС</li>
+                <li>Услуги ремонта</li>
+                <li>Запчасти</li>
+            </ul>
+        </div>
+        <div>
+            <h5>Контакты</h5>
+            <p class="address">Украина, <br>
+            Запорожская обл., <br>
+            г.Орехов ул.Овчаренко 2С.
+            </p>
+            <a href="tel:+380500200901">+38 (050) 020 09 01</a> <br>
+            <a href="tel:+380963997946">+38 (096) 399 79 46</a> <br>
+            <a class="email" href="mailto:orechovagromash@gmail.com">orechovagromash@gmail.com</a>
+        </div>
+        <div>
+            <h5>Мы в интернете</h5>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="trademark">
+    <p>	&#169"Ореховагропром". Все права защищены.</p>
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="bxslider/dist/jquery.bxslider.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
