@@ -56,16 +56,29 @@ h1 {
     align-items: center;
     padding: 10px;
 }
-.logo {
-    width: 50px;
-    height: 50px;
+.logo-js {
+    width: 30px;
+    height: 30px;
+    background: rgb(253, 211, 23);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(68, 66, 66);
+}
+.logo-html {
+    width: 30px;
+    height: 30px;
     background: rgb(117, 169, 248);
     border-radius: 5px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     padding: 5px;
-    font-size: 20px;
+    font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(68, 66, 66);
 }
