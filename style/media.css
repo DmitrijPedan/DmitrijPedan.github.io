@@ -9,11 +9,23 @@
         display: table;
     }
     .buttons button {
-        font-size: 18px;
+        font-size: 13px;
         margin: 5px;
-        padding: 10px;
+    
     }
     .header-logo img {
         height: 70px;
+    }
+    .lesson {
+        justify-content: center;
+    }
+    .task {
+        margin: 0px 15px;
+    }
+    .logo-js {
+        margin: 0px 15px;
+    }
+    .logo-html {
+        margin: 0px 15px;
     }
 }
