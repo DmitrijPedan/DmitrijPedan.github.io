@@ -20,7 +20,7 @@ time, mark, audio, video {
 
 /* header */
 .header {
-    background: #F0DB4F;
+    background: rgb(117, 169, 248);
 }
 .container {
     width: 80%;
@@ -34,29 +34,40 @@ time, mark, audio, video {
     align-items: flex-end;
 }
 
-.logo img {
+.header-logo img {
     height: 100px;
 }
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 16px;
     color: #323330;
     padding: 15px;
-}
-h1 span {
-    font-size: 16px;
 }
 /* content */
 .string {
     display: grid;
-    grid-template-columns: 15% 50% 35%;
-    border-bottom: 1px solid gray;
+    grid-template-columns: 25% 45% 30%;
+    border-bottom: 1px solid rgb(117, 169, 248);
     padding: 15px 0;
 }
 .lesson {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 10px;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    background: rgb(117, 169, 248);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(68, 66, 66);
 }
 h2 {
     font-family: Arial, Helvetica, sans-serif;
@@ -66,6 +77,8 @@ h2 {
 .lesson-discription {
     display: flex;
     text-align: left;
+    align-items: center;
+    padding: 5px;
 }
 .lesson-discription p {
     font-family: Arial, Helvetica, sans-serif;
@@ -76,10 +89,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 .buttons button {
     border: none;
-    background: #F0DB4F;
+    background: rgb(255, 211, 67);
     color: rgb(68, 64, 59);
     margin: 5px;
     font-size: 18px;
@@ -89,7 +103,7 @@ h2 {
 
 /* footer */
 .footer {
-    background: #F0DB4F;
+    background: rgb(117, 169, 248);
 }
 .footer p {
     font-family: Arial, Helvetica, sans-serif;

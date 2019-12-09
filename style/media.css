@@ -9,14 +9,11 @@
         display: table;
     }
     .buttons button {
-        border: none;
-        background: #F0DB4F;
-        color: rgb(68, 64, 59);
         font-size: 18px;
         margin: 5px;
         padding: 10px;
     }
-    .logo img {
-        height: 50px;
+    .header-logo img {
+        height: 70px;
     }
 }
