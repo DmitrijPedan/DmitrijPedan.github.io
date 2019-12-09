@@ -1,0 +1,336 @@
+@font-face {
+    src: url(font/LeagueGothic/LeagueGothicRegular.ttf);
+    font-family: league;
+}
+@font-face {
+    src: url(font/nunitosans/Nunitosansextralight.ttf);
+    font-family: nunito;
+}
+.colortext-purp {
+    color: rgb(91, 4, 126);
+}
+.colortext-gray {
+    color: rgb(177, 177, 177);
+}
+video {
+    max-width: 100%;
+}
+/* header */
+.header {
+    background: url(img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+.container-navbar {
+    width: 80%;
+    margin: auto;
+}
+/* navbar */
+.pingbull {
+    padding: 0px;
+    margin-bottom: 15px;
+}
+.my-navbar {
+    background: transparent;
+    border: none;
+    padding: 50px 0px 20px 0px;
+}
+.my-navbar ul li {
+    background: transparent;
+    border: none;
+    padding: 0px 25px 0px 25px;
+    color: white !important;
+    text-shadow: 4px 4px 1px #AAAAAA;
+}
+.my-navbar-right a {
+    color: white !important;
+    padding: 3px !important;
+    font-family: league;
+    font-size: 24px;
+}
+.my-navbar-right a:hover {
+    border-bottom: 3px solid rgb(205, 7, 245);
+}
+.pingbull {
+    height: auto;
+    color: white !important;
+    font-family: league;
+    font-size: 40px;
+    text-shadow: 4px 4px 1px #AAAAAA;
+}
+.home-active a{
+    border-bottom: 3px solid rgb(205, 7, 245);
+}
+/* slider in header */
+.slider-box {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.slider-container {
+    width: 80%;
+    margin: auto;
+}
+.text-box {
+    width: 49%;
+    float: left;
+    text-align: left;
+    padding: 80px 20px 0px 100px;
+}
+.video-box {
+    width: 49%;
+    float: right;
+    text-align: center !important;
+    padding: 10px 30px;
+}
+.bx-viewport {
+   background: transparent !important;
+}
+.bx-wrapper {
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+ }
+
+ h1 {
+    font-family: league;
+    font-size: 45px;
+    color: white;
+    margin-bottom: 0;
+ }
+ .text-box h1 + p {
+    color: rgb(230, 120, 245);
+    font-size: 30px;
+    font-family: league;
+    text-transform: uppercase;
+    margin-bottom: 0;
+ }
+ .text-box p {
+    font-family: nunito;
+    font-size: 15px;
+    color: white;
+}
+/* info-block */
+.info-block {
+    background-image: linear-gradient(to bottom, rgb(154, 88, 163), rgb(143, 80, 150), rgb(132, 72, 137), rgb(120, 64, 124), rgb(109, 56, 111), rgb(98, 48, 98), rgb(87, 40, 84), rgb(76, 32, 71), rgb(65, 24, 58), rgb(53, 16, 45), rgb(42, 8, 32), rgb(31, 0, 19));
+}
+.info-container {
+    width: 80%;   
+}
+.info-row>div {
+    padding: 0px 40px 0px 65px !important;   
+    position: relative; 
+    margin: 30px 0px;
+}
+h2 {
+    font-family: league;
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+}
+h2 + p {
+    margin: 20px 0px 20px 0px;
+    font-family: nunito;
+    font-size: 15px;
+    color: white;
+}
+.info-row i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 35px;
+}
+
+/* hidden checkbox */
+.hide, .hide + label ~ div {
+    display: none; 
+}
+.hide + label,
+.hide:checked + label {
+    font-family: league;
+    font-weight: 10 !important;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    float: right;  
+}
+.hide:checked + label {
+    border-bottom: 1px solid rgb(205, 7, 245);
+}  
+.hide:checked + label + div {
+    display: inline-flex; 
+    background: transparent;
+    font-family: nunito;
+    font-size: 15px;
+    color: white;
+}
+
+/* data */
+.data {
+    background: rgb(238, 238, 238);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-box-shadow: inset 0px -2px 11px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -2px 11px -5px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -2px 11px -5px rgba(0,0,0,0.75);
+}
+.data-container {
+    width: 80%;
+    margin: auto;
+    clear: both;
+    display: table;
+}
+.data-container>div {
+    width: 45%;
+    margin: 0px 20px;
+}
+.slidercont {
+    float: left;
+}
+.data-post {
+    float: right;
+}
+.data-box {
+    background: white;
+    margin: 3px 35px 15px 35px;
+    padding: 10px 30px 15px 30px;
+    position: relative;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(204,200,204,1);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(204,200,204,1);
+    box-shadow: 1px 1px 1px 0px rgba(204,200,204,1);
+}
+.data-box:after {
+    content: '';
+    border: 12px solid transparent;
+    border-top: 12px solid white;
+    position: absolute;
+    left: 90%;
+    margin-left: -12px;
+    bottom: -24px;
+    width: 0;
+}
+h3 {
+    font-family: league;
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase; 
+}
+h3 + p {
+    font-family: nunito;
+    font-size: 13px;
+    line-height: 25px;
+    color: black;   
+}
+.data-slide img {
+    position: absolute;
+    top: 10px;
+    left: -25px;
+}
+.data-post h3 {
+    background: transparent;
+    padding: 10px 10px 5px 20px;
+}
+.data-post ul {
+    padding-left: 20px;   
+}
+.data-post ul li {
+    font-family: nunito;
+    font-size: 13px;
+    padding: 10px 5px 10px 80px;
+    list-style: none;
+    background: url(img/post-img.png) left center no-repeat;
+}
+.data-post a {
+    float: right !important;
+    color: black;
+    font-family: league;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px 50px;
+}
+/* logo */
+.logo {
+    background: rgb(238, 238, 238);
+    padding-top: 40px;
+    padding-bottom: 40px;  
+}
+.logo-container {
+    width: 80%;
+}
+.bx-wrapper {
+    margin: auto;
+}
+.logo-slider>div a img{
+    
+    text-align: center;
+}
+/* news */
+.news {
+    background: rgb(206, 205, 205);
+    padding-top: 30px;
+    padding-bottom: 20px;
+   
+}
+.news-container {
+    width: 80%;
+}
+.news-row>div {
+    padding: 20px 35px;
+}
+h4 {
+    font-family: league;
+    font-size: 30px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: black;
+}
+h4 + p {
+    font-family: nunito;
+    font-size: 13px;
+    line-height: 25px;
+    color: black;  
+}
+.news-h4 {
+    font-size: 55px;
+}
+/* footer */
+.footer {
+    background: url(img/bg-footer.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 30px 0px;
+    
+}
+.footer-cont {
+    width: 80%;
+    margin: auto;
+    clear: both;
+    display: table;
+}
+
+.footer ul li  {
+    float: left;
+    list-style: none;
+    padding: 0px 30px;
+}
+.footer ul li a {
+    color: white !important;
+    padding: 0px !important;
+    font-family: league;
+    font-size: 20px;
+}
+.footer p  {
+    float: right;
+    font-family: nunito;
+    font-size: 13px;
+    color: white;  
+    padding: 0px;
+    margin: 0;
+}
+
+
+

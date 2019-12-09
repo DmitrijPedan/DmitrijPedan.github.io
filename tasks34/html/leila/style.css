@@ -1,0 +1,460 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* leila */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    background: url(img/bg.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.logo {
+    float: left;
+    padding: 10px 0px;
+}
+
+.headermenu {
+    width: 70%;
+    margin: auto;
+    clear: both;
+    display: table;
+}
+.menu {
+    float: right;
+    padding: 20px 0px; 
+}
+ .menu ul li {
+     list-style: none;
+     text-align: center;
+     float: left;
+     
+}
+.menu ul li a {
+    text-decoration: none;
+    font-size: 11px;
+    color: white;
+    padding: 5px 20px;
+}
+.active {
+     border: 1px solid red;
+     border-radius: 20px;
+     color: red !important; 
+}
+h1 {
+    color: white;
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+    font-size: 30px;
+}
+h1 + p {
+    color: white;
+    text-align: center;
+    line-height: 150%;
+}
+.container {
+    width: 60%;
+    margin: auto;
+    clear: both;
+    display: table;
+}
+
+.search {
+    text-align: center;
+    padding: 20px 0px;
+    
+}
+.header input {
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 10px 20px;
+    width: 40%;
+    font-size: 12px;
+}
+.request {
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 10px 20px;
+    background-color: rgba(255, 0, 34, 0.815);
+    color: white;
+    font-size: 12px;  
+    margin-left: -3px;
+}
+.chatcontainer {
+    width: 40%;
+    margin: auto;
+    padding: 30px 20px;
+}
+.chatcontainer>div {
+    background-color: rgb(240, 236, 236);
+    padding: 25px 50px;
+    margin: 30px 0px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+.chatuser {
+    position: relative;
+    right: 40px;
+}
+.chatleila {
+    position: relative;
+    left: 40px;
+}
+
+.chatuser img {
+    width: 70px;
+    position: absolute;
+    top: 3px;
+    left: -30px;
+}
+.chatleila img {
+    width: 70px;
+    position: absolute;
+    top: 3px;
+    right: -30px;
+}
+
+/* data */
+.data {
+    margin: auto;
+}
+.datacontainer {
+    width: 60%;
+    margin: auto;
+    clear: both;
+    display: table;
+    padding: 60px 0px;
+    border-bottom: 1px solid lightgray;
+}
+.dataimg {
+    width: 50%;
+    float: left;
+}
+.dataimg img {
+    width: 100%
+}
+.datatext {
+    width: 45%;
+    float: right;
+    padding-left: 25px;
+}
+h2 {
+    font-size: 25px;
+}
+.datatext p {
+    font-size: 12px;
+}
+.datatext a {
+    color: red;
+    font-size: 12px;
+}
+.figures {
+    padding: 25px 0px;
+}
+.figures>div {
+    width: 49%;
+    float: left;
+}
+.figures h4 {
+    font-size: 35px;
+    padding: 0px 10px;
+}
+.figures p {
+    font-size: 12px;
+    padding: 0px 10px;
+}
+.company {
+    border-left: 1px solid lightgray;
+}
+
+
+/* pattern */
+.pattern {
+    margin: auto;
+    clear: both;
+    display: table;
+}
+.patterncontainer {
+    width: 60%;
+    margin: auto;
+    clear: both;
+    display: table;
+    padding: 60px 0px;
+    border-bottom: 1px solid lightgray;
+}
+.patternimg {
+    width: 55%;
+    float: right;
+}
+.patternimg img {
+    width: 100%
+}
+.patterntext {
+    width: 35%;
+    float: left;
+}
+.patterntext p {
+    font-size: 12px;
+}
+.patterntext button {
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(255, 0, 34, 0.815);
+    color: white;
+    font-size: 10px;
+    margin-top: 20px;
+    padding: 10px 35px;
+}
+
+/* tips */
+.tips {
+    margin: auto;
+    clear: both;
+    display: table;
+}
+.tipscontainer {
+    width: 60%;
+    margin: auto;
+    clear: both;
+    display: table;
+    padding: 60px 0px;
+    border-bottom: 1px solid lightgray;
+}
+.tipsimg {
+    width: 55%;
+    float: left;
+}
+.tipsimg img {
+    width: 100%
+}
+.tipstext {
+    width: 35%;
+    float: right;
+}
+.tipstext p {
+    font-size: 12px;
+}
+.tipstext button {
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(255, 0, 34, 0.815);
+    color: white;
+    font-size: 10px;
+    margin-top: 20px;
+    padding: 10px 35px;
+}
+
+/* sales */
+.sales {
+    margin: auto;
+    clear: both;
+    display: table;
+}
+.salescontainer {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    clear: both;
+    display: table;
+    padding: 60px 0px 0px 0px;
+}
+.salescontainer p {
+    font-size: 12px;
+}
+.salescontainer img {
+    width: 100%;
+}
+.salestips {
+    clear: both;
+    display: table;
+}
+.salestips>div {
+    float: left;
+    margin: auto;
+    width: 33%;
+    text-align: left;
+    padding: 25px 0px 0px 0px;
+    
+}
+.salestips h3 {
+    font-size: 11px;
+    line-height: 250%;
+    padding: 0px 5px 0px 45px;
+}
+.salestips p {
+    font-size: 10px;
+    line-height: 200%;
+    padding: 0px 5px 0px 45px;
+}
+.salestips img {
+    width: 30px;
+    position: relative;
+    top: -60px;
+}
+
+/* integration */
+.integration {
+    background-color: lightgray;
+    margin: auto;
+    clear: both;
+    display: table;
+}
+.integrationcontainer {
+    width: 60%;
+    margin: auto;
+    clear: both;
+    display: table;
+    padding: 60px 0px;
+    border-bottom: 1px solid lightgray;
+}
+.integrationimg {
+    width: 50%;
+    float: right;
+    position: relative;
+    left: -20px;
+}
+.integrationimg img {
+    width: 100%
+}
+.integrationtext {
+    width: 50%;
+    float: left;
+}
+.patterntext p {
+    font-size: 12px;
+}
+.quote {
+    font-size: 13px;
+    font-style: italic;
+    line-height: 150%;
+}
+.author {
+    font-size: 12px;
+    line-height: 150%;
+}
+.colorgray {
+    color: gray;
+}
+
+/* salesup */
+.salesup {
+    margin: auto;
+    clear: both;
+    display: table;
+}
+.salesupcontainer {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    clear: both;
+    display: table;
+    padding: 60px 0px;
+}
+.salesupcontainer p {
+    font-size: 12px;
+}
+.salesupcontainer img {
+    width: 100%;
+    padding-top: 30px;
+}
+.salesupcontainer button {
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(255, 0, 34, 0.815);
+    color: white;
+    font-size: 10px;
+    margin-top: 20px;
+    padding: 10px 35px;
+}
+
+/* footer */
+/* как выровнять параграфы 
+внутри дивов по нижнему краю??? */
+.footer {
+    margin: auto;
+    background-color: lightgray;
+}
+.footercontainer {
+    width: 60%;
+    margin: auto;
+    clear: both;
+    display: table;
+}
+.footerlogo {
+    width: 33%;
+    text-align: left;
+    float: left;
+    padding: 0px 0px 20px 0px;
+}
+.footermark {
+    width: 34%;
+    margin: auto;
+    float: left;
+    text-align: center;
+    padding: 65px 0px 20px 0px;
+}
+.footerlink {
+    width: 33%;
+    text-align: right;
+    float: right;
+}
+.footerlogo img {
+    padding: 10px 0px;
+}
+.footercontainer p {
+    font-size: 12px;
+}
+.footerlink ul li {
+    list-style: none;
+    text-align: center;
+    float: right;
+    padding: 35px 10px 10px 10px;
+    font-size: 10px;
+    color: grey;
+}
+.footerlink p {
+    clear: both;
+    padding: 10px 0px 20px 0px;
+}
+

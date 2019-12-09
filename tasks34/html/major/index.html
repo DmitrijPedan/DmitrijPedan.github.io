@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Выше 3 Мета-теги ** должны прийти в первую очередь в голове; любой другой руководитель контент *после* эти теги -->
+    <title>Major</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    
+
+    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- Предупреждение: Respond.js не работает при просмотре страницы через файл:// -->
+    <!--[if lt IE 9]>
+ <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script >
+ <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ <![endif]-->
+  </head>
+  <body>
+
+<div class="header" id="home">
+<nav class="navbar navbar-default logo-navbar">
+  <div class="container-fluid container-nav">
+    <!-- Brand и toggle сгруппированы для лучшего отображения на мобильных дисплеях -->
+    <div class="navbar-header my-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+          <img src="img/Logo.png" alt="Logo">
+      </a>
+    </div>
+
+    <!-- Соберите навигационные ссылки, формы, и другой контент для переключения -->
+    <div class="collapse navbar-collapse my-navbar" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right ul-nav">
+        <li><a href="#" onclick="slowScroll('#courier')">ВЫЗВАТЬ КУРЬЕРА</a></li>
+        <li><a href="#" onclick="slowScroll('#calc')">РАССЧИТАТЬ СТОИМОСТЬ</a></li>
+        <li><a href="#" onclick="slowScroll('#map-find')">ОТСЛЕЖИВАНИЕ ГРУЗА</a></li>
+        <li><a href="#" onclick="slowScroll('#major')">КОНТАКТЫ</a></li>
+        <li class="dropdown my-drop">
+          <a href="#" class="dropdown-toggle locat" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <img class="location" src="img/location.png" alt="location"> 
+            Выбор региона, город, телефон 
+            название города, регион и т.д.
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu drop-menu">
+            <li><a href="#">Мурманск</a></li>
+            <li><a href="#">Новосибирск</a></li>
+            <li><a href="#">Екатеринбург</a></li>
+            <li><a href="#">Самара</a></li>
+            <li><a href="#">Челябинск</a></li>
+            <li><a href="#">Омск</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+
+<div class="face">
+  <div class="container face-container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-md-7 col-lg-7 companies">
+        <h1>КОМПАНИИ, ДОВЕРЯЮЩИЕ НАМ СВОИ ГРУЗЫ:</h1>
+          <div class="logo1">
+            <img src="img/sever.png" alt="sever">
+            <img src="img/derussa.png" alt="derussa">
+            <img src="img/leroy.png" alt="leroy">
+          </div>
+          <div class="logo2">
+            <img src="img/invitro.png" alt="invitro">
+            <img src="img/bisquite.png" alt="bisquite">
+            <img src="img/ultra.png" alt="ultra">
+          </div>
+          <div class="video">
+            <!-- Триггер кнопка модали-->
+            <button type="button" class="btn btn-primary btn-lg btn-play" data-toggle="modal" data-target="#myModal">
+            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+            </button>              
+            <!-- Модаль -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Наше официальное видео</h4>
+            </div>
+            <div class="modal-body">
+              <iframe width="560" height="315" 
+              src="https://www.youtube.com/embed/4-QU7WiVxh8" 
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+            </div>
+            </div>
+            <p>Наше официальное видео</p>
+          </div>  <!-- class video -->
+        </div>  <!-- companies -->
+      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 buttons">
+        <div class="face-btn">
+          <a class="btn btn-default btn-face" href="#" role="button" onclick="slowScroll('#calc')">РАССЧИТАТЬ СТОИМОСТЬ</a>
+          <a class="btn btn-default btn-face" href="#" role="button" onclick="slowScroll('#courier')">ВЫЗВАТЬ КУРЬЕРА</a>
+        </div>
+      </div>
+    </div>  <!-- row -->
+  </div>  <!-- container -->
+</div>  <!-- face -->
+
+<div class="calculating"> 
+  <div class="container calc-container" id="calc">
+    <h2>БЛОК РАССЧЕТА СТОИМОСТИ</h2>
+    <p>Если у Вас есть договор с Major Express воспульзуйтесь личным кабинетом</p>
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="my-label">
+            <p>Откуда забрать?</p>
+          </div>
+            <div class="my-input">
+            <div class="sel-shell">
+            <label for="sel">Страна</label>
+            <select name="sel" id="">
+              <option value="">Россия</option>
+              <option value="">Украина</option>
+              <option value="">Белоруссия</option>
+            </select>
+            </div>
+            <div class="sel-shell">
+            <label for="sel">Город</label>
+            <select name="sel" id="">
+                <option value="">Москва</option>
+                <option value="">Киев</option>
+                <option value="">Запорожье</option>
+                <option value="">Днепр</option>
+            </select>
+            </div>
+            <label for="test">Дата отправки</label>
+            <input type="date" name="date" placeholder="Date..." id="">
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="my-label">
+              <p>Куда привезти?</p>
+            </div>
+              <div class="my-input">
+                  <div class="sel-shell">
+                  <label for="sel">Страна</label>
+                  <select name="sel" id="">
+                    <option value="">Россия</option>
+                    <option value="">Украина</option>
+                    <option value="">Белоруссия</option>
+                  </select>
+                  </div>
+                  <div class="sel-shell">
+                  <label for="sel">Город</label>
+                  <select name="sel" id="">
+                    <option value="">Москва</option>
+                    <option value="">Киев</option>
+                    <option value="">Запорожье</option>
+                    <option value="">Днепр</option>
+                  </select>
+                  </div>
+              </div>  
+          </div>
+        <!-- </div>  -->
+      </div> <!-- row -->
+  </div>  <!-- container -->
+</div>  <!-- calculating -->
+
+<div class="cargo">
+  <div class="container cargo-container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="my-input">
+          <div class="sel-shell">
+          <label for="sel">Тип груза</label>
+          <select name="sel" id="">
+            <option value="">Документы</option>
+            <option value="">Обьемный груз</option>
+            <option value="">Европаллета</option>
+          </select>
+          </div>
+          <label for="test">Вес груза</label>
+          <input type="number" min="0" max="1000" name="test" placeholder="0.0" step="0.1">
+          <br>
+          <label for="test">Габариты</label>
+          <input type="number" min="0" max="1000" name="test" placeholder="Длина (см)" step="0.1">
+          <input type="number" min="0" max="1000" name="test" placeholder="Ширина (см)" step="0.1">
+          <input type="number" min="0" max="1000" name="test" placeholder="Высота (см)" step="0.1">
+          <!-- Блок +добавить файл -->
+          <div class="plus-cont">
+          <div class="inp">  
+          <span>
+            <img src="img/plus.png" alt="plus">
+            Добавить груз/документ
+            </span>
+            <input type="file">
+          </div>
+          </div>  <!-- Блок +добавить файл -->
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+          <div class="my-input">
+          </div>
+        </div>
+    </div>
+  </div>  <!-- container -->
+</div> <!-- cargo -->
+
+<div class="map">
+  <div class="container map-container">
+    <div class="row myrow">
+      <div class="hidden-xs hidden-sn col-md-2 col-lg-2">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-md-4 pre-btn1">
+        <button class="btn btn-default" type="submit">СДЕЛАТЬ ЗАКАЗ</button>  
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-md-4 pre-btn2">
+        <button class="btn btn-default" type="submit">РАССЧИТАТЬ</button>
+      </div>
+      <div class="hidden-xs hidden-sn col-md-2 col-lg-2">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 big-btn">
+          <div class="labelSquare" type="submit">
+            <img src="img/geo-location.png" alt="geo"> 
+            <h4>Отправить <br>из офиса</h4>
+            <p>Цена <span class="price">1200 р.</span></p>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 big-btn" id="courier">
+          <div class="labelSquare" type="submit">
+            <img src="img/desktop.png" alt="desktop"> 
+            <h4>Вызвать курьера <br>онлайн</h4>
+            <p>Цена <span class="price">1500 р.</span></p>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 big-btn">
+          <div class="labelSquare" type="submit">
+            <img src="img/phone.png" alt="phone"> 
+            <h4>Вызвать курьера <br>по телефону</h4>
+            <p>Цена <span class="price">1500 р.</span></p>
+          </div>
+      </div>
+    </div> <!-- row-->
+
+    <div class="row map-block" id="map-find">
+      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 map-info">
+        <button class="btn btn-default" type="submit">
+         <p>Отделение №1</p>
+        </button>
+        <button class="btn btn-default" type="submit">
+          <p>Отделение №2</p>
+        </button>
+        <div class="text-info">
+        <p>Улица Барклая, 12/12, Москва, 121309</p>
+        <br>
+        <p>Пн-Вск  10:00-21:00</p>
+        <br>
+        <p>8(495)737-52-23</p>
+        <br>
+        <p>Дополнительная информация (текст)</p>
+        <p>Дополнительная информация (текст)</p>
+        <p>Дополнительная информация (текст)</p>
+        <p>Дополнительная информация (текст)</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 map-addr">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1339.0187184924205!2d35.12159796200101!3d47.838868090228395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc60cce4de3afb%3A0x3dbfe612cef1dbe4!2z0JDQutCw0LTQtdC80LjRjyBJTVQ!5e0!3m2!1sru!2sua!4v1572108361277!5m2!1sru!2sua" 
+        width="100%" height="450" frameborder="0" style="border:0;" 
+        allowfullscreen=""></iframe>
+      </div>
+    </div><!-- row-->
+    
+    <!-- строка навигации -->
+    <p class="nav-string"> <a href="#" onclick="slowScroll('#addr')">Ведите адрес</a> > 
+      <a href="#" onclick="slowScroll('#contacts')"><span class="orange">Укажите контактные данные</span></a>
+       > <a href="#" onclick="slowScroll('#details')">Укажите детали</a></p>
+       <div class="row">
+        
+          <div class="col-xs-12 col-md-6">
+            <div class="my-label" id="addr">
+              <p>Адрес отправителя</p>
+            </div>
+              <div class="adr-input">
+              <label for="test">Страна</label>
+              <input type="text" name="test" placeholder="..." id="">
+              <label for="test">Город</label>
+              <input type="text" name="test" placeholder="..." id="">
+              <label for="test">Адрес</label>
+              <input type="text" name="test" placeholder="Улица, дом, офис, квартира" id="">
+              </div>
+          </div>
+  
+          <div class="col-xs-12 col-md-6">
+              <div class="my-label">
+              <p>Адрес получателя</p>
+              </div>
+                <div class="adr-input">
+                  <label for="test">Страна</label>
+                  <input type="text" name="test" placeholder="..." id="">
+                  <label for="test">Город</label>
+                  <input type="text" name="test" placeholder="..." id="">
+                  <label for="test">Адрес</label>
+                  <input type="text" name="test" placeholder="Улица, дом, офис, квартира" id="">
+                  </div>  
+              </div>
+          <!-- </div>  -->
+        </div> <!-- row -->
+  </div> <!-- map-container -->
+</div>
+
+<div class="person">
+  <div class="container person-container">
+    <div class="row">
+
+      <div class="col-xs-12 col-md-6">
+        <div class="my-label" id="contacts">
+          <p>Отправитель</p>
+        </div>
+        <div class="pers-input">
+          <label for="test">Имя, фамилия</label>
+          <input type="text" name="test" placeholder="" id="">
+          <label for="test">Название фирмы</label>
+          <input type="text" name="test" placeholder="" id="">
+          <label for="test">Телефон</label>
+          <input class="phonesel" type="text" name="test" placeholder="" id="phonesel">
+          <label for="test">Email</label>
+          <input type="email" name="email" placeholder="" id="">
+        </div>
+      </div>
+  
+      <div class="col-xs-12 col-md-6">
+        <div class="my-label">
+          <p>Получатель</p>
+        </div>
+        <div class="pers-input">
+          <label for="test">Имя, фамилия</label>
+          <input type="text" name="test" placeholder="" id="">
+          <label for="test">Название фирмы</label>
+          <input type="text" name="test" placeholder="" id="">
+          <label for="test">Телефон</label>
+          <input class="phonesel" type="text" name="test" placeholder="" id="phonesel">
+          <label for="test">Email</label>
+          <input type="email" name="email" placeholder="" id="">
+        </div>  
+      </div>     
+    </div> <!-- row  -->
+  </div>  <!-- container person-container  -->
+</div>  <!-- person  -->
+
+<div class="details">
+  <div class="container details-container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6" id="details">
+        <div class="det-label">
+          <p>Дата отправки</p>
+          <p><span class="det-hightlight">10 января с 09:00 до 22:00</span></p>
+        </div>
+        <div class="det-label">
+          <p>Забрать из Росии, Москва</p>
+          <p>Привезти в Россию, Санкт-Петербург</p>
+        </div>
+        <div class="det-label">
+          <p>Предполагаемая дата доставки</p>
+          <p><span class="det-hightlight">12 января с 09:00 до 22:00</span></p>
+        </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="det-label">
+            <p>Документ 1,5 кг.</p>
+            <p>10х10х8</p>
+          </div>
+          <div class="det-label">
+            <p>Отправить из офиса</p>
+            <p>Отделение №1</p>
+          </div>
+          <div class="det-label">
+            <p>Получатель - Россия, Москва, адрес</p>
+            <p>Имя, Фамилия, телефон, Email</p>
+          </div>
+          <div class="det-label rules-label">
+            <p>Стоимость доставки <span class="det-hightlight">3200р.</span></p>
+            <input type="checkbox" name="rules"><p>я подтверждаю согласие с <a href="#">условиями</a> </p>
+          </div>
+        </div>
+    </div>  <!-- row -->
+    
+    <!-- Блок +добавить файл -->
+    <div class="plus-cont">
+      <div class="inp">  
+        <span>
+        <img src="img/plus.png" alt="plus">
+        Оформить доп.услуги
+        </span>
+        <input type="file">
+      </div>
+    </div>  <!-- Блок +добавить файл --> 
+
+    <div class="det-label">
+      <div class="checkbox">
+        <input type="checkbox" name="in-hand">
+        <label for="in-hand">Доставка в руки</label>
+      </div>
+      <div class="info">
+        <p>Описание услуги, текст <br>
+        Описание услуги, текст</p>
+      </div>
+      <div class="price">
+        <p>Стоимость услуги <br>
+        <span class="det-hightlight">600р.</span></p>
+      </div>
+    </div>  
+      <div class="det-label">
+        <div class="checkbox">
+          <input type="checkbox" name="in-hand">
+          <label for="in-hand">Доп.услуга</label>
+        </div>
+        <div class="info">
+          <p>Описание услуги, текст <br>
+            Описание услуги, текст</p>
+        </div>
+        <div class="price">
+          <p>Стоимость услуги <br>
+          <span class="det-hightlight">800р.</span></p>
+        </div>
+    </div>
+    <div class="btn-courier">
+      <button class="btn btn-default" type="submit">Вызвать курьера</button>
+    </div>
+
+  </div>  <!-- container details-container  -->
+</div> <!-- details  -->
+
+<div class="promo">
+  <div class="container promo-container">
+    <h5>РЕГИОНАЛЬНОЕ ПРОМО</h5>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 promo-label">
+        <img src="img/bell.png" alt="bell">
+        <p>Бесплатное уведомление о доставке</p>
+      </div>
+      <div class="col-xs-12 col-sm-4 promo-label">
+        <img src="img/shield.png" alt="shield">
+        <p>Страхование всех грузов по умолчанию</p>
+      </div>
+      <div class="col-xs-12 col-sm-4 promo-label">
+        <img src="img/house2.png" alt="house2">
+        <p>Пункт выдачи заказов интернет магазинов (OZON My-Shop)</p>
+      </div>
+    </div> 
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-3 promo-label">
+          <!-- empty div -->
+        </div>
+        <div class="col-xs-12 col-sm-3 promo-label">
+          <img src="img/fedex.png" alt="fedex">
+          <p>Меджународные отправления по линии FedEx Express</p>
+        </div>
+
+      <div class="col-xs-12 col-sm-3 promo-label">
+          <img src="img/clock.png" alt="clock">
+          <p>Сроки доставки по Роисси - от 1 дня</p>
+        </div>
+        <div class="col-xs-12 col-sm-3 promo-label">
+          <!-- empty div -->
+        </div>
+      </div>
+     
+  </div>  <!-- container promo-container  -->
+</div>  <!-- promo  -->
+
+<div class="row footer-map" id="major">
+  <!-- <a name="major"></a> -->
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-info">
+    <div class="info-label">
+      <div class="info-img">
+        <img src="img/phone-sm.png" alt="phonr-sm">
+      </div>
+      <div class="info-txt">
+         <a href="tel:84956462949">8(495)646-29-49</a>
+      </div>
+    </div>
+    <div class="info-label">
+      <div class="info-img">
+        <img src="img/mail.png" alt="mail">
+      </div>
+      <div class="info-txt">
+        <a href="e-mail:major@gmail.com">major@gmail.com</a>
+      </div>
+      </div>
+      <div class="info-label">
+        <div class="info-img">
+          <img src="img/house.png" alt="house">
+        </div>
+        <div class="info-txt">
+          <p>Улица Добролюбова д.2, стр.1, Москва, 121059</p>
+        </div>
+      </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 map-fot">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1340.14783134567!2d35.18628311792235!3d47.795104142510844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc5e5dfbab9785%3A0x53579afa2dae6b3f!2z0JfQsNC_0L7RgNC-0LbRjNC1LTE!5e0!3m2!1sru!2sua!4v1572126105259!5m2!1sru!2sua"
+    width="100%" height="550" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+</div> <!-- row -->
+
+<div class="major-express">
+  <div class="container exp-container">
+    <p>Major-Express</p>
+    <p>2019</p>
+  </div>
+</div>
+
+<!-- кнопка "наверх" -->
+  <a class="btn btn-default btn-up" href="#" role="button" onclick="slowScroll('#home')">
+  <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+  </a>
+
+  <!-- на jQuery (необходим для Bootstrap - х JavaScript плагины) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Включают все скомпилированные плагины (ниже), или включать отдельные файлы по мере необходимости -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

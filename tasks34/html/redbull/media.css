@@ -1,0 +1,115 @@
+@media (min-width: 300px) and (max-width: 450px) {
+    .header {
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+    .my-navbar {
+        padding: 10px 0px 10px 0px;
+    }
+    .my-navbar ul li {
+        padding-top: 15px;
+    }
+/* slider in header */
+.slider-container {
+    width: 90%;
+}
+.text-box {
+    width: 100%;
+    float: none;
+    padding: 0px;
+}
+.video-box {
+    width: 100%;
+    float: none;
+    padding: 10px;
+}
+/* data */
+.data-container {
+    width: 90%;
+}
+.data-container>div {
+    width: 90%;
+    margin: 0px 20px;
+}
+.slidercont {
+    float: none;
+}
+.data-post {
+    padding-top: 20px;;
+    float: none;
+}
+.data-box {
+    margin: 10px 10px 10px 25px;
+    padding: 10px 10px 15px 40px;
+}
+.data-slide img {
+    position: absolute;
+    top: 10px;
+    left: -15px;
+}
+/* logo */
+.logo {
+    background: rgb(238, 238, 238);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.logo-container {
+    width: 90%;
+}
+/* footer */
+
+.footer ul li  {
+    float: none;
+    padding: 0px;
+}
+.footer ul li a {
+    color: white !important;
+    padding: 15px !important;
+}
+.footer p  {
+    float: right;
+    padding: 0px;    
+}
+}
+
+@media (min-width: 451px) and (max-width: 1023px) {
+    .slider-container {
+        width: 90%;
+    }
+    .text-box {
+        padding: 80px 20px 0px 40px;
+    }
+    .data-container {
+        width: 90%;
+    }
+    .data-container>div {
+        width: 95%;
+        margin: 0px 20px;
+    }
+    .slidercont {
+        float: none;
+    }
+    .data-post {
+        float: none;
+    }
+    .data-box {
+        margin: 3px 40px 15px 40px;
+    }
+
+/* footer */
+
+.footer ul li  {
+    float: none;
+    padding: 0px;
+}
+.footer ul li a {
+    color: white !important;
+    padding: 15px !important;
+}
+.footer p  {
+    float: right;
+    padding: 0px;    
+}
+
+
+}
