@@ -82,6 +82,7 @@ let outp = [
 
 alert(`${outp[0]} - ${outp[1]} - ${outp[2]} - ${outp[3]}`);
 
+history.back();
 
 console.log('userInput:', userInput, typeof(userInput));
 console.log('splitterInput:', splitterInput, typeof(splitterInput));

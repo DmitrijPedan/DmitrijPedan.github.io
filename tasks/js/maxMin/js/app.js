@@ -22,11 +22,13 @@ for (let i = 0; i < array.length; i++) {
     }
 }
 
-console.log(array);
-console.log(`Максимальное значение: ${maxValue}`);
-console.log(`Минимальное значение: ${minValue}`);
-
 alert(`Количество элементов в массиве: ${array.length}. 
 Максимальное значение: ${maxValue}.
 Минимальное значение: ${minValue}.`);
+
+history.back();
+
+console.log(array);
+console.log(`Максимальное значение: ${maxValue}`);
+console.log(`Минимальное значение: ${minValue}`);
 

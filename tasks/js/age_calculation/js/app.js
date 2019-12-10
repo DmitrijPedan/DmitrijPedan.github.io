@@ -53,6 +53,7 @@ if (date.Month > user.Month) {
     }
 }
 
+history.back();
 console.log('Пользователь имя: ', user.Name, typeof(user.Name));
 console.log('Пользователь год: ',user.Year, typeof(user.Year));
 console.log('Пользователь месяц: ',user.Month, typeof(user.Month));
