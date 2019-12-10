@@ -87,7 +87,7 @@ h1 {
 }
 h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(82, 80, 67);
 }
 .lesson-discription {
@@ -104,7 +104,7 @@ h2 {
 .decript {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    color: rgb(70, 73, 77);
+    color: rgb(26, 51, 82);
     text-transform: uppercase;
 }
 .buttons {
