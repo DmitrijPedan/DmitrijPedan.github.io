@@ -28,7 +28,7 @@ const sortArrayToSalary = (obj, key) => {
     } else if (key == 2){
         obj.sort((a, b) => {return b.salary - a.salary});
     } else {
-        alert('Неверный ключ. Массив не отсортирован');
+        alert('Ключ не введен. Массив не отсортирован');
     }
     return obj;
 };
@@ -37,7 +37,7 @@ const alertArrayOfObjects = (obj) => {
     let temp = [];
     let str = '';
     for (let i = 0; i < obj.length ; i++) {
-        temp.push(`${obj[i].fullname} salary: ${obj[i].salary}$`);
+        temp.push(`${obj[i].fullname}: ${obj[i].salary}$`);
         str += `${temp[i]}\n`;
     }
     alert(str);
