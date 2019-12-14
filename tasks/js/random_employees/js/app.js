@@ -4,19 +4,19 @@ const firstName = ['Anthony', 'James', 'Aidan', 'Jackson', 'David', 'Mason', 'Lo
 'Carlos', 'Robert', 'Julian', 'Lucas', 'Brandon', 'Diego', 'Jose', 'Nicholas', 'Timothy', 'Kevin', 'Jonathan',
 'Barbara', 'Julia', 'Anastasia', 'Kate', 'Maria', 'Ann', 'Bridget', 'Victoria', 'Angelina', 'Amanda', 'Christina'];
 
-const lastName = ['Abramson', 'Gilson', 'Goodman', 'Hawkins', 'Gill', 'Gilbert', 'Fraser', 'Foster', 'Ford', 
-'Fitzgerald', 'Adams', 'Fisher', 'Faber', 'Elmers', 'Eddington', 'Newton', 'Bach', 'Beethowen', 'Donaldson', 'Trump', 
+const lastName = ['Abramson', 'Gilson', 'Goodman', 'Hawkins', 'Poroshenko', 'Gilbert', 'Zelensky', 'Foster', 'Ford', 
+'Fitzgerald', 'Adams', 'Fisher', 'Chubakka', 'Elmers', 'Eddington', 'Newton', 'Bach', 'Beethowen', 'Donaldson', 'Trump', 
 'Obama', 'Putin', 'Creighton', 'Bond', 'Willis', 'Travolta', 'Tarantino', 'Roberts', 'Franklin', 'Karrey', 'Archibald'];
 
 const getRandomFullName = () => `${firstName[Math.floor(Math.random() * firstName.length)]} ${lastName[Math.floor(Math.random() * lastName.length)]}`;
 
-const getRandomSalary = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+const getRandomSalary = (min , max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-const getArrayOfRandomObjects = (lenght) => {
+const getArrayOfRandomObjects = (lenght, min = 1000, max = 5000) => {
     let employeesArray = []; 
         for (let i = 0; i < lenght; i++) {
             let x = getRandomFullName();
-            let y = getRandomSalary(1000, 5000);
+            let y = getRandomSalary(min, max);
             employeesArray.push({fullname: x, salary: y});
     } 
     return employeesArray;   
@@ -33,26 +33,19 @@ const sortArrayToSalary = (obj, key) => {
     return obj;
 };
 
-const alertArrayOfObjects = (obj) => {
-    let temp = [];
-    let str = '';
+const arrayOfObjectsToString = (obj) => {
+    let str = 'List of emloyees:\n';
     for (let i = 0; i < obj.length ; i++) {
-        temp.push(`${obj[i].fullname}: ${obj[i].salary}$`);
-        str += `${temp[i]}\n`;
+        str += `${obj[i].fullname}: ${obj[i].salary}$\n`;
     }
-    alert(str);
     return str;
 }
 
 let x = getArrayOfRandomObjects(prompt('Введите количество сотрудников'));
 let y = sortArrayToSalary(x, prompt('Введите ключ сортировки (1-ask, 2-desk)'));
-let z = alertArrayOfObjects(y);
+let z = arrayOfObjectsToString(y);
+alert(z);
 history.back();
-
-
-
-
-
 
 
 
